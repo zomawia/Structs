@@ -56,16 +56,20 @@ Player PlayerCreation()
 int main()
 {
 	Player myPlayer[5];
+	char input[64];
 
 	for (int i = 0; i < 5; ++i)
 	{
 		myPlayer[i] = PlayerCreation();
 	}
 
-	for (int i = 0; i < 5; ++i)
+	/*for (int i = 0; i < 5; ++i)
 	{
 		printf("You are %s with a score of %d.\n", myPlayer[i].Name, myPlayer[i].Score);
-	}
+	}*/
+
+	printf("Enter character name: ");
+	scanf_s("%s", Name, 64);
 
 	getchar();
 
